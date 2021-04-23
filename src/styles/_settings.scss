@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
+$font-1: 'fredoka', cursive;
+$font-2: 'roboto', sans-serif; 
+
+$color-1: #5271FF; 
+$color-2: #6495ED; 
+$color-3: #87CEFA; 
+$color-4: #ADD8E6; 
+$white: #ddd; 
+$black: #333; 
+
+$borderRadius: 20px;
+$shadow: 0 1px 3px #333;
+$min-Height: 95vh;
+
+@mixin verticalCenter {
+    display : flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding : 0;
+}
+
+body{
+    margin: 1rem auto; 
+    max-width: 1200px;
+    font-family: $font-2;
+    background: $black;
+}
+
+button{
+    cursor: pointer;
+}
+li{
+    list-style-type: none; 
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+}
+
+a:visited{
+    color: $black;
+}
+
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+
+    @media screen and (max-width :850px) {
+        display : block !important;
+    }
+}
+
+.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: 0.5rem;
+
+    @media screen and (max-width: 850px) {
+        margin-left: 0 !important;
+    }
+}
+
