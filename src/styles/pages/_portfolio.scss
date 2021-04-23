@@ -116,8 +116,7 @@
         grid-area: 2;
         font-family: $font-2;
         font-size: 1.65rem;
-        @include verticalCenter;
-        justify-content: left;
+        color: $white;
   
       }
       img {
