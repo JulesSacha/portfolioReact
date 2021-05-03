@@ -1,9 +1,10 @@
 .home {
+ 
     .homeContent {
         background: $color-1;
         min-height: $min-Height;
         width: 100%;
-        min-height: 500px;
+       
         border-radius: $borderRadius;
         position: relative;
         overflow: hidden;
@@ -28,10 +29,11 @@
         .content {
             position: absolute;
             top: 20%;
-            left: 13%;
             font-family: $font-2;
+            margin: 0 auto;
 
             h1 {
+                @include verticalCenter;
                 font-size: 2rem;
                 font-family: $font-2;
                 color: $white;
@@ -45,8 +47,10 @@
                 color: $white;
             }
             .pdf {
+                @include verticalCenter;
+           
                 a {
-                    @include verticalCenter;
+
                     font-size: 1.2rem;
                     background: $color-3;
                     padding: 1rem 2rem;
@@ -71,16 +75,16 @@
         }
     }
     @media screen and (max-width: 580px) {
-        .home {
-            margin: 1rem;
-            padding: 1rem;
-        }
+       
         .homeContent {
             //   &:after {
             //    background: url('../../media/jules.JPG') no-repeat 60% 50%/cover !important;
             //   }
+         
+
+
             h1 {
-                font-size: 3rem !important;
+                font-size: 2rem !important;
             }
             h2 {
                 font-size: 1.8rem !important;

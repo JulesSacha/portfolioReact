@@ -25,6 +25,8 @@ $min-Height: 95vh;
     box-sizing: border-box;
     margin: 0;
     padding : 0;
+    scrollbar-color: $color-1;
+    
 }
 
 body{
@@ -53,9 +55,12 @@ a:visited{
 
 .home, .knowledges, .portfolio, .contact {
     display: flex;
+   
 
     @media screen and (max-width :850px) {
         display : block !important;
+        margin-bottom: 80px;
+        
     }
 }
 
