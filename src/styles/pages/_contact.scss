@@ -1,5 +1,5 @@
 .contactContent {
-  background: $color-3;
+  background: $color-1;
   border-radius: $borderRadius;
   width: 100%;
   overflow: hidden;
@@ -18,6 +18,8 @@
     outline: none;
     width: 50%;
     margin: 0 auto;
+    
+    padding: 15px;
     h2 {
       margin-top: 35px;
       text-align: center;
@@ -37,20 +39,20 @@
     input,
     textarea
     {
-      background: $color-3;
+      @include glass;
       border-radius: 10px;
       font-family: $font-2;
       font-size: 1rem;
-      color: $black;
+      color: $white;
       margin: 5px;
       padding: 5px;
-      border: 4px dotted $color-1 ;
+      border: 4px solid $color-1 ;
       width: 100%;
     }
 
     input::placeholder,
     textarea::placeholder {
-      color: $black;
+      color: $white;
     }
     label{
       font-size:  0.9rem;
@@ -61,13 +63,20 @@
     }
     .button {
       border: 4px solid $color-2;
-      background: #87CEFA;
+      background: $color-1;
       padding: 1rem 2rem;
       border-radius: 20px;
-      color: $black;
+      color: $white;
       font-size: 1rem;
       transition: 0.2s ease;
-
+      &:hover,
+      &:before{
+      
+        background: $color-4;
+      }
+    &:active{
+      transform: scale(.96);
+    }
     }
 
     input:focus,
@@ -75,7 +84,7 @@
       textarea:focus, 
       .button:focus {
          outline: none;
-         background-color: $color-4;
+         background-color: $color-2;
          }
 
   }
@@ -115,7 +124,7 @@
       text-align: center;
       margin-top: 0.3rem;
       position: relative;
-      color: $color-2;
+      color: $color-3;
 
       &:after {
         content: "";
@@ -138,6 +147,7 @@
       width: 100%;
 
       li {
+        color: $white;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -148,7 +158,7 @@
 
       i {
         font-size: 1.4rem;
-        color: $color-2;
+        color: $color-4;
         margin: 5px;
       }
       span {
@@ -177,9 +187,9 @@
     justify-content: space-around;
 
     a {
-      font-size: 1.2rem;
-      background: $color-4;
+      font-size: 1.5rem;
       border-radius: $borderRadius;
+      padding: 5px;
       display: inline-block;
 
       transform: scaleY(0);
@@ -187,12 +197,10 @@
       transition: 0.2s ease;
       transition: scale 0.1s;
 
-      &:hover {
-        background: $color-4;
-      }
+     
 
       i {
-        color: $color-2;
+        color: $color-4;
         margin-top: 0.3rem;
       }
     }

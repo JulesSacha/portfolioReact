@@ -1,4 +1,5 @@
 import React from 'react';
+import Description from '../components/home/Description';
 import Navigation from '../components/Navigation';
 
 
@@ -11,10 +12,11 @@ const home = () => {
                     <div className="content">
                         <h1>Jules Fernsner</h1>
                         <h2>Développeur web Junior</h2>
-                   
+                  
                     </div>
                 </div>
             </div>
+          
         </div>
     );
 };

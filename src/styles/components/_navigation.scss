@@ -8,7 +8,7 @@
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 3fr 108px;
+    grid-template-rows: 250px 3fr 135px;
     grid-template-areas:
         "1"
         "2"
@@ -90,12 +90,12 @@
 
     ul {
         display: flex;
-        padding: 0 25px;
+        padding: 0 20px;
         justify-content: space-between;
 
         li {
             font-size: 1.5rem;
-            background: $color-4;
+            background: $color-2;
             border-radius: 50%;
             padding: 0.5rem 0.7rem;
             transition: 0.3s;
@@ -111,7 +111,7 @@
                 padding: 0.5rem 0.75rem;
             }
             &:hover {
-                background: $white;
+                background: $color-1;
             }
         }
     }

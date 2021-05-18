@@ -83,7 +83,7 @@
       justify-content: space-around;
   
       .project {
-        background: rgba(47, 223, 230, 0.616);
+        background-color: $color-1;
         border-radius: $borderRadius;
         margin: 0.5rem 0 0 0;
         text-align: center;
@@ -153,12 +153,12 @@
         transform-origin: center;
   
         .infosContent {
+          @include glass;
           position: relative;
           top: 25%;
           max-width: 600px;
           margin: 1rem auto;
-          color: $color-4;
-          background: $color-1;
+          color: $white;
           border-radius: $borderRadius;
           padding: 2rem;
           box-shadow: 0 10px 10px #333;

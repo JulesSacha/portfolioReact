@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+p   {
+   
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+.dracaufeu, .pikachu{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card{
+    width: 600px;
+   max-width: 1200px;
+   
+}
+.card .contenuCard{
+    position: relative;
+    margin : 10px 20px;
+    border: 1px solid #bbb;
+    
+}
+
+.card .contenuCard .description {
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    background: #F6F6F6;
+    color: black;
+    cursor: pointer;
+
+
+}
+.card .contenuCard.active .description{
+    background: #007FFF;
+    color: #fff;
+  
+}
+
+.card .contenuCard .description::before {
+    content: '▸';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.card .contenuCard.active .description::before{
+    content: '▾';
+}
+
+.card .contenuCard .content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+    overflow-y: hidden;
+    
+}
+
+
+.card .contenuCard.active .content {
+    height: 550px;
+    padding: 10px;
+    padding-top: 10vh;
+    
+}
+
+@media (min-width:786px){
+ 
+
+
+    .card .contenuCard .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+        overflow-y: hidden;
+       
+    }
+    p   {
+   
+        margin: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+        
+    }
+}
+

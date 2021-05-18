@@ -1,74 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+$font-1: "fredoka", cursive;
+$font-2: "roboto", sans-serif;
 
-$font-1: 'fredoka', cursive;
-$font-2: 'roboto', sans-serif; 
-
-$color-1: #5271FF; 
-$color-2: #6495ED; 
-$color-3: #87CEFA; 
-$color-4: #ADD8E6; 
-$white: #ddd; 
-$black: #333; 
+$color-1: #5271ff;
+$color-2: #6495ed;
+$color-3: #87cefa;
+$color-4: #add8e6;
+$white: #ddd;
+$black: #333;
 
 $borderRadius: 20px;
 $shadow: 0 1px 3px #333;
 $min-Height: 95vh;
 
 @mixin verticalCenter {
-    display : flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin glass {
+    background: rgba(243, 243, 243, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    backdrop-filter: blur( 7.0px );
+-webkit-backdrop-filter: blur( 7.0px );
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding : 0;
+    padding: 0;
     scrollbar-color: $color-1;
-    
 }
 
-body{
-    margin: 1rem auto; 
+body {
+    margin: 1rem auto;
     max-width: 1200px;
     font-family: $font-2;
     background: $black;
 }
 
-button{
+button {
     cursor: pointer;
 }
-li{
-    list-style-type: none; 
+li {
+    list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: $black;
     cursor: pointer;
 }
 
-a:visited{
+a:visited {
     color: $black;
 }
 
-.home, .knowledges, .portfolio, .contact {
+.home,
+.knowledges,
+.portfolio,
+.contact {
     display: flex;
-   
 
-    @media screen and (max-width :850px) {
-        display : block !important;
+    @media screen and (max-width: 850px) {
+        display: block !important;
         margin-bottom: 80px;
-        
     }
 }
 
-.homeContent, .knowledgesContent, .portfolioContent, .contactContent {
+.homeContent,
+.knowledgesContent,
+.portfolioContent,
+.contactContent {
     margin-left: 0.5rem;
 
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;
     }
 }
-
