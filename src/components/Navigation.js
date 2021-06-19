@@ -39,7 +39,7 @@ const Navigation = () => {
                     </li>
                 </ul>
             </div>
-            <div className="socialNetwork">
+            {/* <div className="socialNetwork">
                 <ul>
                     <li>
                         <a href="https://www.google.com" target="blank"
@@ -65,7 +65,7 @@ const Navigation = () => {
                 <div className="signature">
                     <p>Jules Fernsner | développeur web junior</p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

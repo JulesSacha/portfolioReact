@@ -18,15 +18,16 @@ class Project extends Component {
 
         return (
             <div className="project">
+                <img src={picture} alt="Img Projet" onClick={this.handleInfo} />
                 <div className="icons">
                     {languagesIcons.map(icon =>
                         <i className={icon} key={icon}></i>
                     )}
                 </div>
                 <h3>{name}</h3>
-                <img src={picture} alt="nonononononono" onClick={this.handleInfo} />
+                
                 <span className="infos" onClick={this.handleInfo}>
-                    <i className=" fas fa-plus-circle"></i>
+                    <i className="far fa-plus-square"></i>
                 </span>
 
                 {
@@ -45,7 +46,7 @@ class Project extends Component {
                                     </div>
                                 </div>
 
-                                    <p className="text">{info}</p>
+                                <p className="text">{info}</p>
 
                                 <div className="button return" onClick={this.handleInfo}>
                                     Retourner sur la page
@@ -58,6 +59,7 @@ class Project extends Component {
                         </div>
                     )
                 }
+               
             </div>
 
         );
