@@ -1,9 +1,10 @@
 .sidebar {
     display: flex;
     justify-content: space-evenly;
-    align-items: center ;
+    align-items: center;
     background-color: $color-1;
     font-family: $font-2;
+
     height: 270px;
     width: 100%;
     min-width: 300px;
@@ -17,7 +18,6 @@
         position: relative;
 
         .idContent {
-          
             width: 100%;
 
             img {
@@ -45,11 +45,20 @@
             flex-direction: row;
             justify-content: space-around;
 
-            li {
+            .navActive {
+                border-top: 3px solid $white;
+            }
+
+            a {
                 padding: 1rem;
                 font-size: 1.3rem;
                 position: relative;
+                color: $white;
 
+                &:hover {
+                    border-top: 3px solid $white;
+                    transition: 0.09s ease ;
+                }
                 &:hover i {
                     transform: translate(3px, 3px);
                     color: #fff;
@@ -57,13 +66,17 @@
 
                 a {
                     color: $white;
+
                 }
 
                 &:hover a {
-                    color : #fff;
+                    color: #fff;
                 }
                 .navActive {
                     color: $white;
+                    border-top: 3px solid $white;
+                    transition: 1s ease;
+
                 }
                 i {
                     position: absolute;
@@ -79,52 +92,54 @@
             }
         }
     }
-}
 
-.socialNetwork {
-    grid-area: 3;
+    .label {
+        position: absolute;
+        cursor: pointer;
+        color: #394a56;
+        bottom: 15px;
+        right: 15px;
 
-    ul {
-        display: flex;
-        padding: 0 20px;
-        justify-content: space-between;
-
-        li {
-            font-size: 1.5rem;
-            background: $color-2;
-            border-radius: 50%;
-            padding: 0.5rem 0.7rem;
-            transition: 0.3s;
-            cursor: pointer;
-
-            a:visited {
-                color: $color-1;
-            }
-            &:nth-child(1) {
-                padding: 0.4rem 0.75rem;
-            }
-            &:nth-child(4) {
-                padding: 0.5rem 0.75rem;
-            }
-            &:hover {
-                background: $color-1;
-            }
+        .label-text {
+            margin-left: 16px;
         }
     }
 
-    .signature {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 1rem;
+    .toggle {
+        height: 20px;
+        width: 45px;
+        margin: 0 0 5px 0;
+        border: 1px solid $white;
+        border-radius: 15px;
+        overflow: hidden;
 
-        p {
-            color: $white;
+        .toggle-state {
+            display: none;
         }
+
+        .indicator {
+            height: 100%;
+            width: 200%;
+            background: #ecf0f3;
+            border-radius: 15px;
+            transform: translate3d(-75%, 0, 0);
+            transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+        }
+
+        .toggle-state:checked ~ .indicator {
+            transform: translate3d(25%, 0, 0);
+        }
+    }
+    #label-text {
+        font-family: $font-2;
+        color: $color-3;
     }
 }
 
 
-@media screen and (max-width : 850px) {
+
+
+@media screen and (max-width: 850px) {
     .sidebar {
         border-radius: 0;
         display: flex;
@@ -136,18 +151,16 @@
         z-index: 3;
         width: 100%;
 
-   
-        .id, .socialNetwork{
+        .id {
             display: none;
         }
-        
 
-        .navigation{
+        .navigation {
             width: 100%;
-            padding: .1rem 1rem;
-           
+            padding: 0.1rem 1rem;
+            margin: 0 1rem 0 0;
 
-            ul{
+            ul {
                 display: flex;
                 justify-content: space-around;
 
@@ -155,30 +168,39 @@
                     margin-left: 1.5rem im !important;
                 }
             }
+
+            .label {
+                bottom: 64px;
+                left: 15px;
+                right: auto;
+            }
         }
     }
-    
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 660px) {
     .sidebar {
         padding: 0 0 0.8rem 0;
-        border-radius: 0 ;
+        border-radius: 0;
         width: 100%;
-        ul{
+        ul {
             justify-content: space-around !important;
 
-            li{
-                padding: 1rem 0 !important;
-            }
-            i{
-                font-size: 1.5rem !important;
-                transform: translateY(-4px) !important;
-            }
-            span{
-                display: none;
+            
+              
 
-            }
+                li {
+             padding: 2px 42px 9px 25px !important;
+                }
+
+                i {
+                    font-size: 1.5rem !important;
+                    transform: translateY(-4px) !important;
+                }
+                span {
+                    display: none;
+                }
+            
         }
     }
 }

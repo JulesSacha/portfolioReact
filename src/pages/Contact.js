@@ -2,6 +2,8 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Form from '../components/Form';
+import Signature from '../components/Signature';
+
 
 const contact = () => {
     return (
@@ -35,6 +37,7 @@ const contact = () => {
                     <Form />
                 </div>
             </div>
+            <Signature />
         </div>
     );
 };

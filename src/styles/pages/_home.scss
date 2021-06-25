@@ -44,46 +44,110 @@
                 padding: 1.5rem 0 7rem;
                 color: $white;
             }
-            .pdf {
-                @include verticalCenter;
 
-                a {
-                    font-size: 1.2rem;
-                    background: $color-3;
-                    padding: 1rem 2rem;
-                    border-radius: $borderRadius;
-                    box-shadow: 0 5px 1px rgb(83, 83, 83);
-                    transition: 0.2s ease;
+          
 
-                    &:hover {
-                        background: $color-4;
-                    }
-                }
+            .photo-home {
+                display: none;
             }
+        }
+
+        .label {
+            position: absolute;
+            bottom: 50px;
+            right: 15px;
+            cursor: pointer;
+            color: #394a56;
+
+            .label-text {
+                margin-left: 16px;
+            }
+        }
+
+        .toggle {
+            height: 30px;
+            width: 60px;
+            margin: 0 0 5px 0;
+            border: 1px solid $white;
+            border-radius: 15px;
+            overflow: hidden;
+
+            .toggle-state {
+                display: none;
+            }
+
+            .indicator {
+                height: 100%;
+                width: 200%;
+                background: #ecf0f3;
+                border-radius: 15px;
+                transform: translate3d(-75%, 0, 0);
+                transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+            }
+
+            .toggle-state:checked ~ .indicator {
+                transform: translate3d(25%, 0, 0);
+            }
+        }
+        #label-text {
+            font-family: $font-2;
+            color: $white;
         }
     }
 
     @media screen and (max-width: 850px) {
-        .home {
-            display: flex;
-            flex-direction: column;
-            .homeContent {
-                margin: 0 !important;
+        .homeContent {
+            margin: 0 !important;
+
+            .photo-home {
+                display: initial !important;
+                @include verticalCenter;
+                flex-direction: column;
+
+                img {
+                    border-radius: 50%;
+                    box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+                }
+
+                h3 {
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2rem;
+                    margin-top: 1.5rem;
+                    color: $color-4;
+                }
             }
         }
-        @media screen and (max-width: 580px) {
-            .homeContent {
-                //   &:after {
-                //    background: url('../../media/jules.JPG') no-repeat 60% 50%/cover !important;
-                //   }
+    }
+}
+@media screen and (max-width: 580px) {
+    .homeContent {
+        margin: 0 !important;
 
-                h1 {
-                    font-size: 2rem !important;
-                }
-                h2 {
-                    font-size: 1.8rem !important;
-                }
+        .photo-home {
+            padding: 1rem;
+            display: initial !important;
+            @include verticalCenter;
+            flex-direction: column;
+
+            img {
+                border-radius: 50%;
+                box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
             }
+
+            h3 {
+                font-size: 1.3rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                margin-top: 1.5rem;
+                color: $color-4;
+            }
+        }
+        h1 {
+            font-size: 2rem !important;
+        }
+        h2 {
+            font-size: 1.8rem !important;
         }
     }
 }

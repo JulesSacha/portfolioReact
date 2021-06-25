@@ -19,7 +19,7 @@
     width: 50%;
     margin: 0 auto;
     
-    padding: 15px;
+    padding: 15px 0;
     h2 {
       margin-top: 35px;
       text-align: center;
@@ -176,34 +176,7 @@
       }
     }
   }
-}
-.socialNetwork {
-  grid-area: 3;
 
-  ul {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    justify-content: space-around;
-
-    a {
-      font-size: 1.5rem;
-      border-radius: $borderRadius;
-      padding: 5px;
-      display: inline-block;
-
-      transform: scaleY(0);
-      transform-origin: center;
-      transition: 0.2s ease;
-      transition: scale 0.1s;
-
-     
-
-      i {
-        color: $color-4;
-        margin-top: 0.3rem;
-      }
-    }
 
     //ANIMATION
     @mixin networkAnim($timeout) {
@@ -228,7 +201,7 @@
       @include networkAnim(1.6s);
     }
   }
-}
+
 
 @media screen and (max-width: 500px) {
   .contactContent {

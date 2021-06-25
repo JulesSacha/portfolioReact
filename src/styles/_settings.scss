@@ -14,6 +14,7 @@ $borderRadius: 20px;
 $shadow: 0 1px 3px #333;
 $min-Height: 95vh;
 
+
 @mixin verticalCenter {
     display: flex;
     justify-content: center;
@@ -40,6 +41,14 @@ body {
     max-width: 1200px;
     font-family: $font-2;
     background: $black;
+}
+
+.dark-mode{
+    background: $white;
+    color: $black;
+}
+.dark-mode-signature{
+    color: $white;
 }
 
 button {

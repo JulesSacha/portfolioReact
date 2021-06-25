@@ -19,6 +19,8 @@
       border-radius: $borderRadius;
       padding: 2rem;
     }
+
+
     h3 {
       font-size: 1.4rem;
       margin-bottom: 2rem;
@@ -43,7 +45,7 @@
         grid-area: F;
       }
       h3 {
-        margin-bottom: 0.5rem;
+      margin-bottom: 4.5rem;;
       }
       .years {
         font-size: 0.65rem;
@@ -67,7 +69,7 @@
             content: "";
             background: $color-4;
             position: absolute;
-            height: 100px;
+            height: 140px;
             width: 1px;
             transform: translate(9px, 19px);
           }
@@ -76,6 +78,7 @@
 
       .languagesList {
         padding-top: 0.5rem;
+        
 
         li {
           color: $color-4;
@@ -219,13 +222,18 @@
     @include verticalCenter;
 
     a {
-
-        font-size: 0.8rem;
-        background: $color-3;
-        padding: 1rem 2rem;
-        border-radius: $borderRadius;
-        box-shadow: 0 5px 1px rgb(83, 83, 83);
-        transition: 0.2s ease;
+      border: 4px solid #6495ed;
+      background: #5271ff;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      color: #ddd;
+      font-size: 1rem;
+      transition: 0.2s ease;
+      &:hover,
+      &:before{
+      
+        background: $color-4;
+      }
     }
   }
 }
@@ -268,9 +276,24 @@
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 180px 180px !important;
 
+
+    span{
+        &:nth-child(2):before,
+        &:nth-child(3):before {
+          content: "";
+          background: $color-4;
+          position: absolute;
+          height: 100px !important;
+          width: 1px;
+          transform: translate(9px, 19px);
+        }
+    }
+    
+
     .languagesDisplay {
      
       margin-top: 2rem;
+
     }
     .frameworksDisplay {
       
@@ -293,5 +316,6 @@
       grid-area: 4 !important;
       margin-top: 0.5rem !important;
     }
+   
   }
 }

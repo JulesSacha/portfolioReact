@@ -43,6 +43,7 @@ class Project extends Component {
                                             className="button"
                                             target="blank">Code source
                                          </a>
+                                         <br />
                                     </div>
                                 </div>
 

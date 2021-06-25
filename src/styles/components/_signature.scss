@@ -1,0 +1,47 @@
+#signature{
+
+    margin: 2rem 0;
+    @include verticalCenter;
+    font-size: 1.2rem;
+  color: $black;
+}
+.dark-mode-signature{
+    color: $white;
+    margin: 2rem 0;
+    @include verticalCenter;
+    font-size: 1.2rem;
+}
+
+    .socialNetwork {
+    
+
+    ul {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        li {
+            font-size: 1.7rem;
+            background: $color-3;
+            border-radius: 50%;
+            margin: 0 1rem;
+            padding: 0.5rem 0.7rem;
+            transition: 0.3s;
+            cursor: pointer;
+
+            a:visited {
+                color: $color-1;
+            }
+            &:nth-child(1) {
+                padding: 0.5rem 0.75rem;
+            }
+            &:nth-child(4) {
+                padding: 0.5rem 0.75rem;
+            }
+            &:hover {
+                background: $color-2;
+            }
+        }
+    }
+
+}

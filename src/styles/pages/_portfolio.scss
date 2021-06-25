@@ -83,14 +83,13 @@
     grid-area: 2;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+
 
     .project {
       background-color: $color-1;
       transition: 0.5s;
       border-radius: $borderRadius;
-      margin: 0.5rem 0 0.5rem 0;
+      margin: 0.5rem  0.5rem ;
       text-align: center;
       width: 32%;
       max-height: 50%;
@@ -149,13 +148,11 @@
       transition: 0.2s;
       transform: translateY(7px);
 
-
       &:hover {
         transform: scale(1.1);
       }
-    
     }
-    
+
     .showInfos {
       position: fixed;
       top: 0;
@@ -169,9 +166,9 @@
       .infosContent {
         @include glass;
         position: relative;
-        top: 25%;
         max-width: 600px;
         margin: 1rem auto;
+        top: 15%;
         color: $white;
         border-radius: $borderRadius;
         padding: 2rem;
@@ -236,6 +233,7 @@
 @media (max-width: 520px) {
   .radioDisplay {
     position: fixed;
+    overflow: scroll;
   }
 
   .fa-plus-circle {
@@ -243,14 +241,14 @@
   }
 
   .portfolioContent {
-    grid-template-rows: 1fr !important;
-
     .projects {
       justify-content: space-around;
+      flex-wrap: wrap !important;
 
       .project {
-        grid-template-rows:  35px 45px 150px 38px !important;
+        grid-template-rows: 35px 59px 200px 55px !important;
         width: 95% !important;
+      
 
         img {
           height: 100% !important;
