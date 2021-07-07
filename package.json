@@ -1,5 +1,6 @@
 {
-  "name": "react-cv",
+  "homepage": "http://jules.fernsner.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -40,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@svgr/cli": "^5.5.0"
+    "@svgr/cli": "^5.5.0",
+    "gh-pages": "^3.2.3"
   }
 }
