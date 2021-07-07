@@ -1,0 +1,32 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg width="100%" height="100%" viewBox="0 0 210 297" version="1.1" id="svg5" inkscape:version="1.1 (c68e22c387, 2021-05-23)" sodipodi:docname="SVG.portfolio.svg" inkscape:export-filename="C:\Users\ferns\SVG.portfolio.png" inkscape:export-xdpi="96" inkscape:export-ydpi="96" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview7" pagecolor="#505050" bordercolor="#eeeeee" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.74118967" inkscape:cx="-62.062387" inkscape:cy="575.42626" inkscape:window-width="1920" inkscape:window-height="527" inkscape:window-x="-8" inkscape:window-y="2152" inkscape:window-maximized="1" inkscape:current-layer="layer1"></sodipodi:namedview>
+  <defs id="defs2">
+    <rect x="-236.10691" y="573.40249" width="164.60024" height="151.10842" id="rect13999" class="svg-elem-1"></rect>
+    <rect x="-254.99546" y="597.68777" width="186.18716" height="149.75924" id="rect9263" class="svg-elem-2"></rect>
+    <linearGradient inkscape:collect="always" id="linearGradient15535">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop15531"></stop>
+      <stop style="stop-color:#000000;stop-opacity:0;" offset="1" id="stop15533"></stop>
+    </linearGradient>
+    <linearGradient id="linearGradient15484" inkscape:swatch="solid">
+      <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop15482"></stop>
+    </linearGradient>
+    <rect x="-215.86917" y="470.86463" width="232.05936" height="265.78892" id="rect5907" class="svg-elem-3"></rect>
+    <linearGradient inkscape:collect="always" xlink:href="#linearGradient15535" id="linearGradient15537" x1="-62.939323" y1="179.55537" x2="-12.122787" y2="179.55537" gradientUnits="userSpaceOnUse"></linearGradient>
+  </defs>
+  <g inkscape:label="Calque 1" inkscape:groupmode="layer" id="layer1">
+    <rect id="rect10823-6" width="89.24279" height="87.457924" x="33.912254" y="108.34075" style="fill: rgb(80, 97, 205); fill-opacity: 0.707317; stroke-width: 0.264583;" ry="15.706731" class="svg-elem-4"></rect>
+    <text xml:space="preserve" transform="scale(0.26458333)" id="text5905" style="fill:black;fill-opacity:1;line-height:1.25;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;white-space:pre;shape-inside:url(#rect5907)"></text>
+    <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:50.8px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:55.6875;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:0.265, 0.53;stroke-dashoffset:0;stroke-opacity:1" x="-63.897839" y="197.76201" id="text6639"><tspan x="-63.897839" y="197.76201" id="tspan18998">
+</tspan></text>
+    <rect style="fill: rgb(0, 0, 128); stroke-width: 0.264583;" id="rect10855" width="0" height="0" x="39.980766" y="179.91347" class="svg-elem-5"></rect>
+    <rect style="fill: rgb(0, 0, 128); stroke-width: 0.264583;" id="rect10881" width="0" height="4.640626" x="81.032448" y="170.98918" class="svg-elem-6"></rect>
+    <rect style="fill: rgb(0, 0, 128); stroke-width: 0.264583;" id="rect10907" width="1.4278847" height="1.0709134" x="83.174278" y="170.27524" class="svg-elem-7"></rect>
+    <rect id="rect10823" width="89.24279" height="87.457924" x="44.978367" y="118.87139" style="fill: rgb(82, 113, 255); fill-opacity: 0.705882; stroke-width: 0.264583;" ry="15.706731" class="svg-elem-8"></rect>
+    <text xml:space="preserve" transform="scale(0.26458333)" id="text9261" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect9263);fill:#000000;fill-opacity:1;stroke:none"></text>
+    <text xml:space="preserve" transform="matrix(1.0744657,0,0,1.0744657,333.87875,-458.27498)" id="text13997" style="font-size:40px;line-height:1.25;font-family:'Fredoka One';-inkscape-font-specification:'Fredoka One';white-space:pre;shape-inside:url(#rect13999);fill:#ececec"><tspan x="-236.10742" y="610.60069" id="tspan19000">JF</tspan></text>
+  </g>
+
+</svg>

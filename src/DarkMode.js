@@ -1,13 +1,14 @@
 
-let element = document.body;
-let signature = document.getElementById("signature");
+
 
 function darkMode() {
 
   let text = document.getElementById("label-text");
+  let element = document.body;
+  let signature = document.getElementById("signature");
 
-
-    element.classList.toggle("dark-mode");
+  element.classList.toggle("dark-mode");
+  signature.classList.toggle("dark-mode-signature");
   
 
     if (text.innerText === "Mode nuit"){

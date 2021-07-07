@@ -3,7 +3,7 @@
 $font-1: "fredoka", cursive;
 $font-2: "roboto", sans-serif;
 
-$color-1: #5271ff;
+$color-1: #3b0e8f;
 $color-2: #6495ed;
 $color-3: #87cefa;
 $color-4: #add8e6;
@@ -45,11 +45,17 @@ body {
 
 .dark-mode{
     background: $white;
-    color: $black;
-}
-.dark-mode-signature{
     color: $white;
+    $color-1: red;
 }
+
+.dark-mode-signature{
+    p{
+        color: $black;
+    }
+  
+}
+
 
 button {
     cursor: pointer;
@@ -85,7 +91,6 @@ a:visited {
 .knowledgesContent,
 .portfolioContent,
 .contactContent {
-    margin-left: 0.5rem;
 
     @media screen and (max-width: 850px) {
         margin-left: 0 !important;

@@ -6,11 +6,10 @@
     font-family: $font-2;
 
     height: 270px;
-    width: 100%;
     min-width: 300px;
     border-radius: $borderRadius;
     position: relative;
-    margin: 0 0 0.5rem 0.5rem;
+    margin: 0 0 0.5rem 0rem;
 
     .id {
         text-align: center;
@@ -20,9 +19,17 @@
         .idContent {
             width: 100%;
 
-            img {
+            img{
+                position: relative;
                 border-radius: 50%;
-                box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+                transform: translate(-165px, -5px);
+            }
+            svg {
+                .svg-cercle {
+                    stroke-width: 10;
+                    stroke: $color-3;
+                    fill: url('../../media/jules.JPG');
+                }
             }
 
             h3 {
@@ -50,7 +57,7 @@
             }
 
             a {
-                padding: 1rem;
+                padding: 1rem 0.5rem;
                 font-size: 1.3rem;
                 position: relative;
                 color: $white;
@@ -139,7 +146,7 @@
 
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
     .sidebar {
         border-radius: 0;
         display: flex;

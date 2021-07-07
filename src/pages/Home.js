@@ -1,8 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 import Signature from '../components/Signature';
-
-
+import Icon from '../svgr/icon';
 
 const home = () => {
     return (
@@ -11,13 +10,19 @@ const home = () => {
             <div className="homeContent">
                 <div className="textContent">
                     <div className="content">
-                        <div className="photo-home">.
-                            <img src="./media/photo-cv-fond.jpg" width="150px" height="150px" alt="Img de profil" />
+                        <div className="photo-home">
+                            <svg>
+                                <circle class="svg-cercle" cx="75" cy="75" r="70" />
+                            </svg>
+                            <img src="./media/photo-cv-fond.jpg" width="140px" height="140px" alt="Img de profil" />
                             <h3>Jules Fernsner</h3>
                             <h2>Développeur web Junior</h2>
                         </div>
+                    <Icon />
                     </div>
                 </div>
+
+
             </div>
 
             <Signature />

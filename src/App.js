@@ -7,6 +7,11 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
 const App = () => {
+
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register("/serviceWorker.js");
+ }
+ 
   return (
     <>
      <BrowserRouter>

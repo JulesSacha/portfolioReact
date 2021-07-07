@@ -1,16 +1,20 @@
+
+   .footer{
+    margin-bottom : 150px;
+
 #signature{
 
     margin: 2rem 0;
     @include verticalCenter;
     font-size: 1.2rem;
-  color: $black;
+  color: $white;
+  
 }
-.dark-mode-signature{
-    color: $white;
-    margin: 2rem 0;
-    @include verticalCenter;
-    font-size: 1.2rem;
-}
+
+
+
+
+
 
     .socialNetwork {
     
@@ -45,3 +49,5 @@
     }
 
 }
+   }
+

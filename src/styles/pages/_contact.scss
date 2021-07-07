@@ -64,6 +64,7 @@
     .button {
       border: 4px solid $color-2;
       background: $color-1;
+      margin: 3rem 0 4rem 0;
       padding: 1rem 2rem;
       border-radius: 20px;
       color: $white;
@@ -203,7 +204,7 @@
   }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .contactContent {
     .contact-form{
       width: 100%;

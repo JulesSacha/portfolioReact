@@ -2,7 +2,7 @@ import React from 'react';
 
 const Signature = () => {
     return (
-        <div>
+        <div className="footer">
             <div id="signature">
                     <p>Jules Fernsner | développeur web junior</p>
                 </div>

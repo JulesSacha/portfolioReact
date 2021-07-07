@@ -3,7 +3,6 @@
         background: $color-1;
         min-height: $min-Height;
         width: 100%;
-
         border-radius: $borderRadius;
         position: relative;
         overflow: hidden;
@@ -44,8 +43,6 @@
                 padding: 1.5rem 0 7rem;
                 color: $white;
             }
-
-          
 
             .photo-home {
                 display: none;
@@ -104,9 +101,26 @@
                 @include verticalCenter;
                 flex-direction: column;
 
-                img {
+                img{
+                    position: relative;
                     border-radius: 50%;
-                    box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+                    transform: translate(-145px, -5px);
+                }
+                svg {
+                    width: 150px;
+                    .svg-cercle {
+                        stroke-width: 10;
+                        stroke: #fff;
+                        fill: url('../../media/jules.JPG');
+                        stroke-dasharray: 480px;
+                        stroke-dashoffset: 480px;
+                       animation: anim 4s ease forwards;
+                    }
+                    @keyframes anim {
+                        to{
+                          stroke-dashoffset: 0;
+                        }
+                      }
                 }
 
                 h3 {
@@ -132,7 +146,8 @@
 
             img {
                 border-radius: 50%;
-                box-shadow: 0 0 0 4px $color-3, 0 0 0 8px $color-4, 0 0 0 12px $color-2;
+                
+
             }
 
             h3 {
