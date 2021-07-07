@@ -1,6 +1,6 @@
 {
-  "homepage": "http://jules.fernsner.github.io/portfolio",
-  "name": "portfolio",
+  "homepage": "http://jules.fernsner.github.io/portfolioReact",
+  "name": "portfolioReact",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
