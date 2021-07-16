@@ -40,6 +40,7 @@
         "F";
       .languagesDisplay {
         grid-area: L;
+        margin-bottom: 4rem;
       }
       .frameworksDisplay {
         grid-area: F;
@@ -69,7 +70,7 @@
             content: "";
             background: $color-4;
             position: absolute;
-            height: 140px;
+            height: 120px;
             width: 1px;
             transform: translate(9px, 19px);
           }
