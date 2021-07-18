@@ -8,7 +8,7 @@ $color-2: #6495ed;
 $color-3: #87cefa;
 $color-4: #add8e6;
 $white: #ddd;
-$black: #390d89;
+$black: #05010c;
 
 $borderRadius: 20px;
 $shadow: 0 1px 3px #333;
@@ -30,9 +30,9 @@ $min-Height: 95vh;
 }
 
 @mixin neo {
-    background: linear-gradient(145deg, #330c7b, #3d0e93);
-    box-shadow:  5px 5px 0px #1f074b,
-                 -5px -5px 0px #5313c7;
+    background: #3b0e8f;
+    box-shadow:  5px 5px 10px #19063d,
+                 -5px -5px 10px #5d16e1;
 }
 * {
     box-sizing: border-box;
