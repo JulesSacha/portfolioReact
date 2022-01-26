@@ -18,6 +18,15 @@
       background: $color-1;
       border-radius: $borderRadius;
       padding: 2rem;
+      transition: 1s;
+
+
+
+      &:hover{
+        transform: scale(1.1);
+        transition: 1s;
+        border: 5px solid #ccc;
+      }
     }
 
 

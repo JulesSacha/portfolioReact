@@ -44,9 +44,6 @@
                 color: $white;
             }
 
-            .photo-home {
-                display: none;
-            }
         }
 
         .label {
@@ -111,7 +108,6 @@
                     .svg-cercle {
                         stroke-width: 10;
                         stroke: #fff;
-                        fill: url('../../media/jules.JPG');
                         stroke-dasharray: 480px;
                         stroke-dashoffset: 480px;
                        animation: anim 4s ease forwards;

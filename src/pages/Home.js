@@ -1,34 +1,42 @@
 import React from 'react';
+import Cube from '../components/cube';
 import Navigation from '../components/Navigation';
 import Signature from '../components/Signature';
-import Icon from '../svgr/icon';
+
+// var cube = document.querySelector('.cube');
+// var radioGroup = document.querySelector('.radio-group');
+// var currentClass = '';
+
+// function changeSide() {
+//     var checkedRadio = radioGroup.querySelector(':checked');
+//     var showClass = 'show-' + checkedRadio.value;
+//     if (currentClass) {
+//         cube.classList.remove(currentClass);
+//     }
+//     cube.classList.add(showClass);
+//     currentClass = showClass;
+// }
+// set initial side
+// changeSide();
+// radioGroup.addEventListener('change', changeSide);
+
 
 const home = () => {
     return (
         <div className="home">
             <Navigation />
-            <div className="homeContent">
-                <div className="textContent">
-                    <div className="content">
-                        <div className="photo-home">
-                            <svg>
-                                <circle class="svg-cercle" cx="75" cy="75" r="70" />
-                            </svg>
-                            <img src="./media/photo-cv-fond.jpg" width="140px" height="140px" alt="Img de profil" />
-                            <h3>Jules Fernsner</h3>
-                            <h2>Développeur web Junior</h2>
-                        </div>
-                    <Icon />
-                    </div>
-                </div>
-
-
-            </div>
-
+            <Cube />
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Signature />
 
         </div>
     );
 };
+
+
+
 
 export default home;
