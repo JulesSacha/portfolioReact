@@ -1,105 +1,89 @@
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-.scene {
-  width: 400px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  perspective: 800px;
-
-}
-
-.box {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-200px);
-  transition: transform 1s;
-}
-
-.box.show-front  { transform: translateZ(-200px) rotateY(   0deg); }
-.box.show-right  { transform: translateZ(-200px) rotateY( -90deg); }
-.box.show-back   { transform: translateZ(-200px) rotateY(-180deg); }
-.box.show-left   { transform: translateZ(-200px) rotateY(  90deg); }
-.box.show-top    { transform: translateZ(-200px) rotateX( -90deg); }
-.box.show-bottom { transform: translateZ(-200px) rotateX(  90deg); }
-
-.box__face {
-  position: absolute;
-  border-radius: 35px;
-  width: 400px;
-  height: 400px;
-  line-height: 400px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-.radioDisplay{
-    height: 60px;
-    grid-area: 1;
-    border-radius: 20px;
-    display: flex;
-    width: 100%;
-    padding: 1rem 2rem;
-    margin: 0 auto;
-    -webkit-user-select: none;
-    user-select: none;
-    box-shadow: 0 1px 3px #333;
-    margin: 0.5rem 0;
-}
-
-
- .radioDisplay li {
-    color: #87cefa;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    padding: 0 1rem;
-    flex: 1 1;
-    z-index: 2;
-    display: flex;
-    justify-content: center;
+#-cube-viewport {
     align-items: center;
+    display: flex;
+    height: var(--viewport-size);
+    justify-content: center;
+    position: relative;
+    width: var(--viewport-size);
 }
 
- .radioDisplay li input[type="radio"]:after {
-    content: "";
-    visibility: visible;
+#-cube-axis {
+    height: var(--cube-size);
+    transform-style: preserve-3d;
+    transform: rotateX(var(--y, -25deg)) rotateY(var(--x, -15deg));
+    transition: transform .7s ease-out;
+    /*transition: transform .7s cubic-bezier(.22,.68,0,1.71);*/
+    width: var(--cube-size);
+}
+
+.-cube-side {
+    height: 100%;
     position: absolute;
-    top: -4px;
-    left: -12px;
-    height: 0.9rem;
-    width: 0.9rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s;
-    background: #add8e6;
-    transform: scale(0);
-    transform-origin: center;
+    transition: transform .5s cubic-bezier(.25,.75,.5,1.25);
+    width: 100%;
 }
 
- .radioDisplay li input:checked:after {
-    transform: scale(1.17) translate(-25%, -25%);
-    top: 2px;
-    left: -6px;
+/*Front*/
+#-cube-side-0 {
+    transform: translateZ(var(--translateZ));
 }
-.box__face--front  { background: #3b0e8f; }
-.box__face--right  { background: #3b0e8f; }
-.box__face--back   { background: #3b0e8f; }
-.box__face--left   { background: #3b0e8f; }
-.box__face--top    { background: #3b0e8f; }
-.box__face--bottom { background: #3b0e8f; }
 
-.box__face--front  { transform: rotateY(  0deg) translateZ(200px); }
-.box__face--right  { transform: rotateY( 90deg) translateZ(200px); }
-.box__face--back   { transform: rotateY(180deg) translateZ(200px); }
-.box__face--left   { transform: rotateY(-90deg) translateZ(200px); }
-.box__face--top    { transform: rotateX( 90deg) translateZ(200px); }
-.box__face--bottom { transform: rotateX(-90deg) translateZ(200px); }
+/*Back*/
+#-cube-side-1 {
+    transform: rotateY(180deg) translateZ(var(--translateZ));
+}
 
-label { margin-right: 10px; }
+/*Right*/
+#-cube-side-2 {
+    transform: rotateY(90deg) translateZ(var(--translateZ));
+}
+
+/*Left*/
+#-cube-side-3 {
+    transform: rotateY(-90deg) translateZ(var(--translateZ));
+}
+
+/*Top*/
+#-cube-side-4 {
+    transform: rotateX(90deg) translateZ(var(--translateZ));
+}
+
+/*Bottom*/
+#-cube-side-5 {
+    transform: rotateX(-90deg) translateZ(var(--translateZ));
+}
+
+
+h1 {
+    color: #eff2f7;
+    pointer-events: none;
+}
+
+
+
+
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    align-items: center;
+    display: flex;
+    border-radius: 50px;
+    height: 100%;
+    justify-content: center;
+    user-select: none;
+}
+
+
+
+.cube-viewport {
+    border-radius: 16px;
+    cursor: var(--cursor, grab);
+}

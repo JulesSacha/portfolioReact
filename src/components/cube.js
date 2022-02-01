@@ -1,85 +1,62 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
+import Cube from '../components/cube-master';
 import Icon from '../svgr/icon';
 
+function CubeMaster() {
+  const bodyStyle = document.body.style;
+  const [selected, setSelected] = useState('');
+  const [reveal, setReveal] = useState(false);
 
-class Cube extends Component {
-    state = {
-        radios: [
-            { id: 1, className:"box show-front", value: "front" },
-            { id: 2, className:"box show-right", value: "right" },
-            { id: 3, className:"box show-back", value: "back" },
-            { id: 4, className:"box show-left", value: "left" },
-            { id: 5, className:"box show-top", value: "top" },
-            { id: 6, className:"box show-bottom", value: "bottom" },
+  const handleMouseDown = () => {
+    bodyStyle.setProperty('--cursor', 'grabbing');
+  };
 
-        ],
-        selectedRadio: 'front'
-    };
+  const handleMouseUp = () => {
+    bodyStyle.setProperty('--cursor', 'grab');
+  };
 
-    handleRadio = (event) => {
-        let radios = event.target.value;
-        this.setState({ selectedRadio: radios })
+  const handleClick = ({target}) => {
+    setSelected(target.textContent);
+  };
 
-  
-    }
+  const handleToggleReveal = () => {
+    setReveal(reveal => !reveal);
+  };
 
-
-
-
-    render() {
-        let { radios, selectedRadio } = this.state;
-
-
-
-        return (
-
-<div className="container">
-
-<div className="scene">
-    
-<div className={"box show-"+ selectedRadio}>
-  <div className="box__face box__face--front"><Icon /></div>
-  <div className="box__face box__face--back">back</div>
-  <div className="box__face box__face--right">right</div>
-  <div className="box__face box__face--left">left</div>
-  <div className="box__face box__face--top">top</div>
-  <div className="box__face box__face--bottom">bottom</div>
-</div>
-</div>
-<center>
-<ul className="radioDisplay">
-                        {
-                            radios.map((radios) => {
-                                return (
-                                    <li key={radios.id}>
-                                        <input type="radio" 
-                                        id="react"
-                                        name="radios"
-                                        checked={radios.value === selectedRadio}
-                                        value={radios.value}
-                                        onChange={this.handleRadio}
-                                        />
-                                        <label htmlFor={radios.value} >{radios.value}</label>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-
-
-</center> 
-
-</div>
+  return (
+    <main>
+     
+      <Cube
+          className='cube-viewport'
+          cubeSize='200px'
+          onMouseDown={handleMouseDown}
+          onMouseUp={handleMouseUp}
+          onClick={handleToggleReveal}
+          reveal={reveal}
+          viewportSize='350px'
+      >
+        <section onClick={handleClick} style={{background: '#b1e6f0',     opacity: 0.9
+}}>
+          <Icon />
+        </section>
+        <section onClick={handleClick} style={{background: '#b1e6f0'}}>
+        
+        </section>
+        <section onClick={handleClick} style={{background: '#b1e6f0'}}>
          
-        );
-    }
+        </section>
+        <section onClick={handleClick} style={{background: '#b1e6f0'}}>
+          
+        </section>
+        <section onClick={handleClick} style={{background: '#b1e6f0'}}>
+          
+        </section>
+        <section onClick={handleClick} style={{background: '#b1e6f0'}}>
+     
+        </section>
+      </Cube>
+    </main>
+);
 }
 
-export default Cube;
-
-
-
-
-
-
-
+export default CubeMaster;

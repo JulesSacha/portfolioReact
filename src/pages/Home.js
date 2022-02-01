@@ -1,5 +1,5 @@
 import React from 'react';
-import Cube from '../components/cube';
+import CubeMaster from '../components/cube';
 import Navigation from '../components/Navigation';
 import Signature from '../components/Signature';
 
@@ -25,7 +25,7 @@ const home = () => {
     return (
         <div className="home">
             <Navigation />
-            <Cube />
+            <CubeMaster />
             <br/>
             <br/>
             <br/>

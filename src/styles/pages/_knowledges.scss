@@ -2,8 +2,8 @@
   .knowledgesContent {
     min-height: $min-Height;
     width: 100%;
+
     position: relative;
-    overflow: hidden;
     display: grid;
     grid-template-columns: 50% 1fr 1fr;
     grid-template-rows: 70% 30%;

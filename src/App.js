@@ -13,8 +13,7 @@ const App = () => {
  }
  
   return (
-    <>
-     <BrowserRouter>
+<BrowserRouter>
      <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/competences" component={Knowledges} />
@@ -23,7 +22,7 @@ const App = () => {
         <Route component={NotFound} />
         </Switch>
      </BrowserRouter>
-    </>
+          
   );
 };
 
