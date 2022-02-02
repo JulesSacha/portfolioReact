@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolioReact/static/css/main.433329db.chunk.css",
-    "main.js": "/portfolioReact/static/js/main.0ef804a1.chunk.js",
-    "main.js.map": "/portfolioReact/static/js/main.0ef804a1.chunk.js.map",
-    "runtime-main.js": "/portfolioReact/static/js/runtime-main.ff72ae38.js",
-    "runtime-main.js.map": "/portfolioReact/static/js/runtime-main.ff72ae38.js.map",
-    "static/js/2.0cb9aa02.chunk.js": "/portfolioReact/static/js/2.0cb9aa02.chunk.js",
-    "static/js/2.0cb9aa02.chunk.js.map": "/portfolioReact/static/js/2.0cb9aa02.chunk.js.map",
-    "static/js/3.0e412991.chunk.js": "/portfolioReact/static/js/3.0e412991.chunk.js",
-    "static/js/3.0e412991.chunk.js.map": "/portfolioReact/static/js/3.0e412991.chunk.js.map",
-    "index.html": "/portfolioReact/index.html",
-    "static/css/main.433329db.chunk.css.map": "/portfolioReact/static/css/main.433329db.chunk.css.map",
-    "static/js/2.0cb9aa02.chunk.js.LICENSE.txt": "/portfolioReact/static/js/2.0cb9aa02.chunk.js.LICENSE.txt",
-    "static/media/styles.scss": "/portfolioReact/static/media/jules.81b5c0ab.JPG"
+    "main.css": "/JulesSacha/portfolioReact/static/css/main.748712c6.chunk.css",
+    "main.js": "/JulesSacha/portfolioReact/static/js/main.d62ad0bb.chunk.js",
+    "main.js.map": "/JulesSacha/portfolioReact/static/js/main.d62ad0bb.chunk.js.map",
+    "runtime-main.js": "/JulesSacha/portfolioReact/static/js/runtime-main.0d2702e3.js",
+    "runtime-main.js.map": "/JulesSacha/portfolioReact/static/js/runtime-main.0d2702e3.js.map",
+    "static/js/2.3bbb3fba.chunk.js": "/JulesSacha/portfolioReact/static/js/2.3bbb3fba.chunk.js",
+    "static/js/2.3bbb3fba.chunk.js.map": "/JulesSacha/portfolioReact/static/js/2.3bbb3fba.chunk.js.map",
+    "static/js/3.2a22fb2c.chunk.js": "/JulesSacha/portfolioReact/static/js/3.2a22fb2c.chunk.js",
+    "static/js/3.2a22fb2c.chunk.js.map": "/JulesSacha/portfolioReact/static/js/3.2a22fb2c.chunk.js.map",
+    "index.html": "/JulesSacha/portfolioReact/index.html",
+    "static/css/main.748712c6.chunk.css.map": "/JulesSacha/portfolioReact/static/css/main.748712c6.chunk.css.map",
+    "static/js/2.3bbb3fba.chunk.js.LICENSE.txt": "/JulesSacha/portfolioReact/static/js/2.3bbb3fba.chunk.js.LICENSE.txt",
+    "static/media/photo-cv-fond.79fb8eaa.jpg": "/JulesSacha/portfolioReact/static/media/photo-cv-fond.79fb8eaa.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff72ae38.js",
-    "static/js/2.0cb9aa02.chunk.js",
-    "static/css/main.433329db.chunk.css",
-    "static/js/main.0ef804a1.chunk.js"
+    "static/js/runtime-main.0d2702e3.js",
+    "static/js/2.3bbb3fba.chunk.js",
+    "static/css/main.748712c6.chunk.css",
+    "static/js/main.d62ad0bb.chunk.js"
   ]
 }
