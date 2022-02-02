@@ -5,8 +5,7 @@ const Otherskills = () => {
         <div className="otherSkills">
            <h3>Formation</h3>
             <div className="exp1">
-                <h4>Web Force 3 - Strasbourg | En recherche de stage ou d'une alternance</h4>
-                
+                <li>Web Force 3 - Strasbourg | Développement Web</li>
             </div>
         </div>
     );

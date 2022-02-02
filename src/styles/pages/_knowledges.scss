@@ -23,10 +23,8 @@
 
 
       &:hover{
-        transform: scale(1.1);
         transition: 1s;
-        border: 5px solid #ccc;
-      }
+background-color: #6495ed;      }
     }
 
 
@@ -175,6 +173,7 @@
 .otherSkills {
   grid-area: O;
   margin-right: 0.5rem;
+  color: $white;
   
 
   h4{

@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import darkMode from '../DarkMode.js';
-
-
+import Img from '../medias/photo-cv-fond.jpg';
 
 
 const Navigation = () => {
@@ -10,10 +9,8 @@ const Navigation = () => {
         <div className="sidebar">
             <div className="id">
                 <div className="idContent">
-                    <svg>
-                        <circle class="svg-cercle" cx="205" cy="75" r="70" />
-                    </svg>
-                    <img src="" width="140px" height="140px" alt="Img de profil" />                    <h3>Jules Fernsner</h3>
+                 
+                    <img src={Img} width="140px" height="140px" alt="Img de profil" />                    <h3>Jules Fernsner</h3>
                 </div>
 
             </div>
