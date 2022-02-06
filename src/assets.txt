@@ -1,21 +1,40 @@
 **** Email Regex ****
+
 let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
+
+
 **** Message type ****
-Bonjour From Scratch,
+
+Bonjour Jules,
+
+
 
 Nouveau message de : {{name}}
 
-Entreprise : {{company}}
+
+
+
 
 Téléphone : {{phone}}
 
+
+
 Email : {{email}}
 
+
+
  
+
+
 
 {{{message}}}
 
+
+
  
+
 Best wishes,
+
 EmailJS team
+

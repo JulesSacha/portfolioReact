@@ -41,13 +41,13 @@ class Project extends Component {
                                         <a href={source}
                                             rel="noopener noreferrer"
                                             className="button"
-                                            target="blank">Code source
+                                            target="blank">Visiter le site
                                          </a>
                                          <br />
                                     </div>
                                 </div>
 
-                                <p className="text">{info}</p>
+                                {/* <p className="text">{info}</p> */}
 
                                 <div className="button return" onClick={this.handleInfo}>
                                     Retourner sur la page

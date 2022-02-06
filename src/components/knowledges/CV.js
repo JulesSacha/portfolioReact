@@ -5,7 +5,7 @@ const CV = () => {
         <div className="CV">
             <h3>CV</h3>
             <div className="pdf">
-                            <a href="./media/CV.pdf" target="blank">Télécharger CV</a>
+                            <a href="../media/CV.pdf.pdf" target="blank">Voir mon CV</a>
                         </div>
         </div>
     );

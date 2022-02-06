@@ -38,7 +38,8 @@ function CubeMaster() {
         viewportSize='350px'
       >
         <section onDoubleClick={handleClick} style={{ background: '#b1e6f0' }}>
-          <Icon />
+       <svg  xmlns="http://www.w3.org/2000/svg" version="1.1"
+    className="icon"><Icon /></svg>
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
           <h1>React JS</h1>
