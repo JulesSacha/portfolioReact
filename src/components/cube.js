@@ -42,19 +42,20 @@ function CubeMaster() {
     className="icon"><Icon /></svg>
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
-          <h1>React JS</h1>
+          <h1><i class='fab fa-react'></i></h1>
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
-        <h1>Wordpress</h1>
+        <h1><i class='fab fa-js'></i></h1>
 
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
-        <h1>PHP/Symphony</h1>
+        <h1><i class='fab fa-php'></i></h1>
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
-        <h1>Javascript</h1>
+        <h1><i class='fab fa-ethereum'></i></h1>
         </section>
         <section onClick={handleClick} style={{ background: '#5671E0' }}>
+        <h1><i class='fab fa-wordpress'></i></h1>
         </section>
 
       </Cube>

@@ -214,14 +214,7 @@ export default class extends Component {
             autoComplete="off"
           />
 
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            onChange={this.handleChange.bind(this)}
-            placeholder="téléphone"
-            value={this.state.phone}
-          />
+
           <div className="email-content">
             <label id="not-mail">Email non valide</label>
             <input
@@ -244,7 +237,7 @@ export default class extends Component {
             value={this.state.message}
           />
         </div>
-        <input className="button" type="button" value="envoyer" onClick={this.handleSubmit.bind(this)} />
+        <input className="button" type="submit" value="Envoyer" onClick={this.handleSubmit.bind(this)} />
         <div className="form-message"></div>
       </form>
     );

@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-$font-1: "fredoka" cursive;
-$font-2: "roboto", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
+
+$font-1: "fredoka one"; 
+$font-2: "roboto"; 
 
 $color-1: #5671E0;
 $color-2: #6495ed;
 $color-3: #87cefa;
 $color-4: #add8e6;
 $white: #ddd;
-$black: #333;
+$black:  rgb(20, 20, 20);
 
 $borderRadius: 15px;
 $shadow: 0 1px 3px #333;
@@ -34,22 +34,29 @@ $min-Height: 95vh;
     margin: 0;
     padding: 0;
     scrollbar-color: $color-1;
+
 }
+
+
 
 body {
     margin: 1rem auto;
     max-width: 1200px;
-    font-family: $font-2;
+    font-family: $font-1;
     background: $black;
+    transition: 2s;
 }
 
 .dark-mode{
     background: $white;
     color: $white;
     $color-1: red;
+    transition: 2s;
+
 }
 
 .dark-mode-signature{
+    
     p{
         color: $black;
     }
@@ -73,6 +80,8 @@ a {
 a:visited {
     color: $black;
 }
+
+
 
 .home,
 .knowledges,

@@ -28,7 +28,7 @@
       @include glass;
       width: 100%;
       height: 100px;
-      border-radius: 10px;
+      border-radius: 15px;
       font-family: $font-2;
       font-size: 1rem;
       color: $white;
@@ -49,7 +49,7 @@
   
      
     }
-    .button {
+    input[type=submit] {
       border: 4px solid $color-2;
       background: $color-1;
       padding: 1rem 2rem;
@@ -57,10 +57,15 @@
       color: $white;
       font-size: 1rem;
       transition: 0.2s ease;
+      cursor: pointer;
       &:hover,
       &:before{
       
         background: $color-4;
+      }
+    &:active{
+      transform: scale(.96);
+    }
       }
     &:active{
       transform: scale(.96);
@@ -163,7 +168,78 @@
         cursor: pointer;
       }
     }
+
+    .eth_center{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 2rem auto;
+ 
+
+h3{
+  text-align: center;
+  color: $color-4;
+  margin : 2rem auto;
+
+}
+    
+   
+    input,
+    textarea
+    {
+      background-color: rgb(49, 77, 170);
+      width: 50%;
+      height: 50px;
+      border-radius: 10px;
+      font-family: $font-2;
+      font-size: 1rem;
+      color: $white;
+      margin: 2rem;
+      padding: 5px;
+      border: 4px solid $color-1 ;
+      width: 100%;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: $white;
+    }
+    label{
+      font-size:  0.9rem;
+      margin: 10px;
+      color: red;
+  
+     
+    }
+    .button {
+      border: 4px solid $color-2;
+      background: $color-1;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      color: $white;
+      font-size: 1rem;
+      transition: 0.2s ease;
+      &:hover,
+      &:before{
+      
+        background: $color-4;
+      }
+    &:active{
+      transform: scale(.96);
+    }
+    }
+
+    input:focus,
+     select:focus,
+      textarea:focus, 
+      .button:focus {
+         outline: none;
+         background-color: $color-2;
+         }
   }
+}
+
 
 
     //ANIMATION
@@ -188,8 +264,7 @@
     a:nth-child(4) {
       @include networkAnim(1.6s);
     }
-  }
-
+  
 
 @media screen and (max-width: 650px) {
   .contactContent {

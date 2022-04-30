@@ -4,7 +4,7 @@ const Signature = () => {
     return (
         <div className="footer">
             <div id="signature">
-                    <h4>Jules Sacha Fernsner | Développeur web </h4>
+                    <h4>Jules Fernsner | Développeur web </h4>
                 </div>
                 <div className="socialNetwork">
                     <ul>

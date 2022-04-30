@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-image: linear-gradient(to top, #5671e0, #5773e6, #5875ec, #5977f3, #5a79f9);    font-family: $font-2;
+    background-image: linear-gradient(to top, #5671e0, #5773e6, #5875ec, #5977f3, #5a79f9);    font-family: $font-1;
 
     height: 270px;
     min-width: 300px;
@@ -33,7 +33,7 @@
             h3 {
                 font-size: 1.3rem;
                 color: #ECF0F3;
-                font-family: $font-2;
+                font-family: $font-1;
                 text-transform: uppercase;
                 letter-spacing: 0.2rem;
                 margin-top: 1.5rem;

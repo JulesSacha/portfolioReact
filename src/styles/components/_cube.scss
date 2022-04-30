@@ -6,6 +6,8 @@
      justify-content: center;
      position: relative;
      width: var(--viewport-size);
+     margin-top : 50%;
+     margin-bottom : 50%;
  }
  #-cube-axis {
      height: var(--cube-size);
@@ -48,7 +50,12 @@
  h1 {
      color: #eff2f7;
      pointer-events: none;
+     i{
+        font-size : 3rem
+    }
  }
+
+
  main {
      align-items: center;
      display: flex;
@@ -91,5 +98,15 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     } 
   }
 
+
+  @media screen and (max-width: 800px)  {
+    #-cube-viewport{
+        margin-top : 0;
+        margin-bottom : 0;
+
+    }
+
+    
+  }
 
 
