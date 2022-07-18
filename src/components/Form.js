@@ -237,7 +237,7 @@ export default class extends Component {
             value={this.state.message}
           />
         </div>
-        <input className="button" type="submit" value="Envoyer" onClick={this.handleSubmit.bind(this)} />
+        <button className="button" type="submit" value="Envoyer" onClick={this.handleSubmit.bind(this)} >Envoyer</button>
         <div className="form-message"></div>
       </form>
     );

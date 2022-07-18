@@ -132,21 +132,21 @@ function Contact() {
                             </CopyToClipboard>
 
                         </li>
-
+         
                     </ul>
-                    <div className="eth_center">
+                    {/* <div className="eth_center">
                     <TokenEth />
                         <h3>Soutenez le Web 3</h3>
                         <input type="number" placeholder="Montant à envoyer" onChange={changeAmountSend} />
                         <button className="button" onClick={transfer}>Je participe</button>
                         {success && <h3 className="error">{success}</h3>}
                         {error && <p className="error">{error}</p>}
-                        {/* <h2>{balance / 10 ** 18} eth</h2>
-                            <h3>Retirer de l'ether</h3>
+                     <h2>{balance / 10 ** 18} eth</h2>
+                              {/*  <h3>Retirer de l'ether</h3>
                             <input type="number" placeholder="Montant en ether" onChange={changeAmountWithdraw} />
                             <input type="text" placeholder="adresse" onChange={changeAccount} />
                             <button className="button" onClick={withdraw}>Retirer</button> */}
-                    </div>
+                   
 
                     <Form />
                 </div>

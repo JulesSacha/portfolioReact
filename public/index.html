@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -10,8 +11,122 @@
 
   <title>Jules Fernsner</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
-  
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+
+    let canvas;
+let ctx;
+let flowField;
+let flowFieldAnimation;
+// Initiation du canvas 
+window.onload = function () {
+    canvas = document.getElementById('canvas1');
+    ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    flowField = new FlowFieldEffect(ctx, canvas.width, canvas.height);
+    flowField.animate(0);
+}
+
+window.addEventListener('resize', function () { // pour rendre le canvas responsive
+    this.cancelAnimationFrame(flowFieldAnimation)
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    flowField = new FlowFieldEffect(ctx, canvas.width, canvas.height);
+    flowField.animate(0);
+
+});
+
+const mouse = {
+    x: 0,
+    y: 0,
+}
+window.addEventListener('mousemove', function (e) {
+  mouse.x = e.x;
+  mouse.y = e.y;
+})
+
+
+//creation de la class 
+class FlowFieldEffect {
+    #ctx;
+    #width;
+    #height;
+    constructor(ctx, width, height) {
+        this.#ctx = ctx;
+        this.#ctx.lineWidth = 15;
+        this.#ctx.linecap = 'round';
+        this.#height = height;
+        this.#width = width;
+        this.lastTime = 0;
+        this.interval = 1000 / 300;
+        this.timer = 0;
+        this.cellSize = 20;
+        this.gradient;
+        this.#createGradient();
+        this.#ctx.strokeStyle = this.gradient;
+        this.radius = 0;
+        this.vr = 0.03;
+        // console.log('effect loaded');
+
+    }
+
+    #createGradient() {
+        this.gradient = this.#ctx.createLinearGradient(0, 0, this.#width, this.#height);
+        this.gradient.addColorStop("0.2", "#536EDF");
+        this.gradient.addColorStop("0.9", "#02ffe7");
+        this.gradient.addColorStop("0.2", "#c5d6ee");
+        this.gradient.addColorStop("0.9", "#11eedd");
+        this.gradient.addColorStop("0.2", "#536EDF");
+        this.gradient.addColorStop("0.9", "#11eedd");
+
+    }
+
+    #drawLine(angle, x, y) {
+         let positionX = x;
+         let positionY = y;
+         let dy = mouse.y - positionY ;
+         let dx = mouse.x - positionX ;
+         let distance = dx * dx + dy * dy;
+
+        const length = distance / 200000;
+        this.#ctx.beginPath();
+        this.#ctx.moveTo(x, y);
+        this.#ctx.lineTo(x + Math.cos(angle) * length, y + Math.sin(angle) * length);
+        this.#ctx.stroke();
+    }
+
+    animate(timeStamp) {
+        const deltaTime = timeStamp - this.lastTime;
+        this.lastTime = timeStamp;
+        if (this.timer > this.interval) {
+            this.#ctx.clearRect(0, 0, this.#width, this.#height);
+            this.radius += this.vr;
+            for (let y = 0; y < this.#height; y += this.cellSize) {
+                for (let x = 0; x < this.#width; x += this.cellSize) {
+                    const angle = (Math.cos(x * 0.0007) + Math.sin(y * 0.0007)) * this.radius;
+                    this.#drawLine(angle, x, y);
+
+                }
+            }
+            this.timer = 0;
+
+        } else {
+            this.timer += deltaTime;
+        }
+        flowFieldAnimation = requestAnimationFrame(this.animate.bind(this));
+
+    }
+}
+
+
+
+
+
+
+
+
+  </script>
   <script type="text/javascript">
   (function() {
   emailjs.init("user_kv1lgdrU05ADFTWTrDKZC");
@@ -24,15 +139,11 @@
 </head>
 
 <body>
-
-  
-  <div id="root">
-
-    
+  <div id="root">   
   </div>
 
 
-
+  <canvas id="canvas1"></canvas>
 
 
 

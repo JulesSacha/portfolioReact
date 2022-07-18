@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto&display=swap');
 
-$font-1: "fredoka one"; 
+@font-face {
+	font-family: 'fredoka';
+	src: url('../../src/font/FredokaOne-Regular.ttf');
+}
+@font-face {
+	font-family: 'roboto';
+	src: url('../../src/font/FredokaOne-Regular.ttf');
+}
+
+$font-1: "fredoka"; 
 $font-2: "roboto"; 
 
-$color-1: #5671E0;
+$color-1: #233a995d;
 $color-2: #6495ed;
 $color-3: #87cefa;
 $color-4: #add8e6;
@@ -47,15 +56,19 @@ body {
     transition: 2s;
 }
 
-.dark-mode{
-    background: $white;
-    color: $white;
+canvas{
+    background-color: rgb(18, 25, 65);
+}
+
+ .dark-mode{
+    background: rgb(86, 113, 224);
+    color: rgb(86, 113, 224);
     $color-1: red;
     transition: 2s;
 
 }
 
-.dark-mode-signature{
+.dark-mode-signature {
     
     p{
         color: $black;
@@ -65,6 +78,13 @@ body {
 
 
 button {
+    border: 4px solid #6495ed;
+    background: #5671E0;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    color: #ddd;
+    font-size: 1rem;
+    transition: 0.2s ease;
     cursor: pointer;
 }
 li {
@@ -77,11 +97,19 @@ a {
     cursor: pointer;
 }
 
+
 a:visited {
     color: $black;
 }
 
+#canvas1{
+    position: fixed;
+    // background-image: radial-gradient(circle, #055a40, #00555c, #004c88, #003da7, #0d0097);
 
+    top :0;
+    left :0;
+    z-index: -1;
+}
 
 .home,
 .knowledges,

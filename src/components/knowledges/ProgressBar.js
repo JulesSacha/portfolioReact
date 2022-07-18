@@ -9,7 +9,7 @@ const ProgressBar = (props) => {
             <div className="years">
             <span>Expérience</span>
             <span>6 mois</span>
-            <span>1 ans</span>
+            <span>1 an</span>
             </div>
             <div>
                 {

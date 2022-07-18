@@ -24,7 +24,7 @@
 
       &:hover{
         transition: 1s;
-background-color: #6495ed;      }
+background-color: #6494ed60;      }
     }
 
 
@@ -47,6 +47,8 @@ background-color: #6495ed;      }
         "F";
       .languagesDisplay {
         grid-area: L;
+        margin: 2rem 0;
+
       }
       .frameworksDisplay {
         grid-area: F;

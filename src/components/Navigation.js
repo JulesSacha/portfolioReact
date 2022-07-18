@@ -43,13 +43,13 @@ const Navigation = () => {
                     </NavLink>
                 </ul>
 
-                <label className="label">
+                {/* <label className="label">
                     <div className="toggle">
                         <input className="toggle-state" type="checkbox" name="check" value="check" onClick={darkMode} />
                         <div className="indicator"></div>
                     </div>
                     <div id="label-text">Mode nuit</div>
-                </label>
+                </label> */}
 
 
             </div>
